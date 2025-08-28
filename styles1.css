@@ -1,0 +1,21 @@
+/*
+ * This file has been refactored to prevent conflicts with Bootstrap.
+ * The .logo rule, which caused layout issues, has been removed.
+ * All styling is now applied directly to the word spans.
+ */
+
+
+.word1{
+    color: #ff0000;
+    font-family: Impact, fantasy;
+}
+
+.word2{
+    color: #1e90ff;
+    font-family: Impact, fantasy;
+}
+
+.word3{
+    color: #ff0000;
+    font-family: Impact, fantasy;
+}

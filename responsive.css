@@ -1,0 +1,178 @@
+/* ========================================================================== */
+/* MOBILE-FIRST RESPONSIVE STYLES (Default for all screens)                   */
+/* ========================================================================== */
+
+/* Base font size for all screens. We'll adjust up from here. */
+body {
+    font-size: 16px;
+}
+
+/* Base styles for the hero section on small screens */
+.hero-content h1 {
+    font-size: 2.5rem; /* Starting with a reasonable size for phones */
+    margin-bottom: 0.2em;
+}
+.hero-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.hero-content p {
+    font-size: 1em;
+}
+
+/* Menu category headings */
+.menu-category h2 {
+    font-size: 2em;
+}
+
+/* Card layout - default to stacking */
+.menu-items-grid {
+    grid-template-columns: 1fr; /* Force single column on mobile */
+    gap: 15px;
+}
+
+.menu-item-card img {
+    height: 180px;
+}
+
+/* Buttons */
+.btn-group {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Social links styling for a better tap area on touch devices */
+.social-links-container a {
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+}
+.social-links-container a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Definition list styling for mobile (stacked) */
+dl {
+    grid-template-columns: 1fr;
+    gap: 10px; /* Reduced gap */
+    text-align: left;
+}
+dt {
+    text-align: left;
+    margin-bottom: 0;
+}
+dd {
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+/* Card and container adjustments for small screens */
+.card, .feature {
+    max-width: 100%;
+}
+.cards, .features {
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+/* ========================================================================== */
+/* SMALL TO MEDIUM DEVICES (sm-md, ~576px and up)                             */
+/* ========================================================================== */
+@media (min-width: 576px) {
+    body {
+        font-size: 16.5px;
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .menu-items-grid {
+        /* Allow 2 columns on most phones and tablets */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+    .menu-item-card img {
+        height: 200px;
+    }
+    .btn-group {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* ========================================================================== */
+/* LARGE DEVICES (lg, ~992px and up)                                          */
+/* ========================================================================== */
+@media (min-width: 992px) {
+    body {
+        font-size: 17px;
+    }
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    .menu-category h2 {
+        font-size: 2.6em;
+    }
+    .menu-items-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    .menu-item-card img {
+        height: 220px;
+    }
+    /* Definition list for desktops (side-by-side) */
+    dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 15px 30px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    dt {
+        text-align: right;
+        margin-bottom: 0;
+    }
+    dd {
+        border-left: 3px solid var(--accent);
+        padding-left: 15px;
+        margin-bottom: 0;
+    }
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    .feature {
+        /* Flex-basis for 3-column layout with a gap */
+        flex-basis: calc(33.33% - 20px);
+        max-width: none;
+    }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    blockquote {
+        font-size: 1.2em;
+    }
+}
+
+/* ========================================================================== */
+/* EXTRA LARGE DEVICES (xl, ~1200px and up)                                   */
+/* ========================================================================== */
+@media (min-width: 1200px) {
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    .menu-items-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+    blockquote {
+        font-size: 1.3em;
+    }
+}

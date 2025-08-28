@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Piggy Blues BBQ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using a placeholder for your favicon -->
+    <link rel="icon" type="image/jpeg" href="https://placehold.co/16x16/000000/FFFFFF.jpg">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4C+0Wd/F9q+H7uH8O+h6E6eF5y/T5f1e1y/t1c3F6U5sE5f5O5qE5e5r5g5t5k5d5s5e5c5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /*
+         * This custom style block contains the word-specific font
+         * styling and the responsive CSS from your original files,
+         * now simplified and structured for a mobile-first approach.
+         */
+
+        .logo {
+            border: solid 8px #ff0000;
+            padding: 8px; /* Added padding here */
+        }
+
+        .word1, .word2, .word3 {
+            font-family: Impact, fantasy;
+        }
+        .word1, .word3 {
+            color: #ff0000;
+        }
+        .word2 {
+            color: #1e90ff;
+        }
+
+        /* Responsive styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-section h2 {
+            font-size: 2.5rem;
+        }
+        .text-xl-lg {
+            font-size: 1.25rem;
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        @media (min-width: 576px) {
+            .hero-section h2 {
+                font-size: 3rem;
+            }
+            .text-xl-lg {
+                font-size: 1.5rem;
+            }
+            .btn-group {
+                flex-direction: row;
+                gap: 1rem;
+            }
+        }
+        @media (min-width: 992px) {
+            .hero-section h2 {
+                font-size: 3.5rem;
+            }
+        }
+        .menu-items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .menu-item-card img {
+            height: 220px;
+        }
+        .footer-nav a, .social-icons a {
+            transition: color 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header and Navbar (using Tailwind for responsive layout) -->
+    <header class="flex justify-between items-center p-4 bg-blue-800 text-white">
+  <!-- Logo Section -->
+  <a href="index.html" class="flex-shrink-0">
+    <h1 class="logo font-bold text-3xl md:text-4xl">
+      <span class="word1 text-dark-red-400">PIGGY</span>
+      <span class="word2">BLUES</span>
+      <span class="word3">BAR-B-QUE</span>
+    </h1>
+  </a>
+
+  <!-- Navigation Section -->
+  <nav>
+    <ul id="mobile-menu" class="hidden md:flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 items-center">
+      <li><a href="index.html" class="block px-4 py-2 bg-yellow-400 text-gray-900 rounded-full font-bold">Home</a></li>
+      <li><a href="menu.html" class="block hover:text-yellow-400 transition-colors">MENU</a></li>
+      <li><a href="contact.html" class="block hover:text-yellow-400 transition-colors">CONTACT</a></li>
+      <li><a href="aboutus.html" class="block hover:text-yellow-400 transition-colors">ABOUT US</a></li>
+      <li><a href="catering.html" class="block hover:text-yellow-400 transition-colors">CATERING</a></li>
+    </ul>
+  </nav>
+</header>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-md" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+   
+      
+    <header class="text-center text-6xl text-red-600">
+        <h1>Piggy Blue's Menu</h1>
+    </header>
+
+   <main class="container">
+  <section class="menu-category font-extrabold">
+    <h2>Smoked Meats</h2>
+    <div class="menu-items-grid">
+        
+<div class="menu-item-card font-extrabold">
+        <img src="images/Shared With Josh Stoltz/20180814_215956.jpg" alt="Classic Pulled Pork Sandwich">
+        <h3>Pulled Pork Sandwich</h3>
+        <p class="description">Slow-smoked pork shoulder, piled high on a toasted brioche bun with our signature tangy BBQ sauce and a side of coleslaw.</p>
+        <p class="price">$12.99</p>
+      </div>
+      
+
+      <div class="menu-item-card font-extrabold">
+        <img src="images/beef-brisket.jpg" alt="Texas Beef Brisket">
+        <h3>Texas Beef Brisket</h3>
+        <p class="description">Tender sliced brisket smoked low and slow with mesquite wood, served with house-made pickles and two sides.</p>
+        <p class="price">$17.50</p>
+      </div>
+
+      <div class="menu-item-card font-extrabold">
+        <img src="images/smoked-chicken.jpg" alt="Smoked Half Chicken">
+        <h3>Smoked Half Chicken</h3>
+        <p class="description">Juicy chicken smoked with hickory wood and glazed with our savory dry rub. Comes with your choice of sauce.</p>
+        <p class="price">$13.75</p>
+      </div>
+
+      <div class="menu-item-card font-extrabold">
+        <img src="images/sausage-links.jpg" alt="Sausage Links">
+        <h3>Sausage Links</h3>
+        <p class="description">Spicy andouille and classic pork sausage smoked to perfection. Served with mustard and grilled onions.</p>
+        <p class="price">$10.25</p>
+      </div>
+
+      <div class="menu-item-card font-extrabold">
+        <img src="images/rib-plate.jpg" alt="St. Louis Style Ribs">
+        <h3>St. Louis Style Ribs</h3>
+        <p class="description">A half rack of seasoned pork ribs smoked with applewood, finished with tangy sauce and flame-grilled for extra char.</p>
+        <p class="price">$18.00</p>
+      </div>
+
+    </div>
+  </section>
+
+    <section class="menu-category font-extrabold">
+        <h2>Eat Mo’ Piggy - That’s Some Pig</h2>
+        <div class="menu-items-grid">
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_pork_tacos.jpg" alt="Pork Tacos">
+                <h3>Pork Tacos</h3>
+                <p class="description">Two grilled corn tortillas filled with BBQ Pork, Colby-Jack cheese, pico de gallo, crisp romaine and sour cream. Served with choice of (pick 1) Pit Potatoes, Coleslaw, Baked Beans, Cornbread.</p>
+                <p class="price">$12.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_lip_smackin_sandwich.jpg" alt="Lip Smackin’ Sandwich">
+                <h3>Lip Smackin’ Sandwich</h3>
+                <p class="description">Choice of Shredded Pork, Beef Brisket, Chicken Breast, or Turkey Breast on a fresh baked artisan roll. Served with choice of (pick 1) Pit Potatoes, Coleslaw, Baked Beans, Cornbread.</p>
+                <p class="price">$12.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_big_mo_sandwich.jpg" alt="Big Mo’ Sandwich">
+                <h3>Big Mo’ Sandwich</h3>
+                <p class="description">Hot sauce spiked Pork topped with our house pickled jalapenos and coleslaw on a fresh baked artisan roll. Served with choice of (pick 1) Pit Potatoes, Coleslaw, Baked Beans, Cornbread.</p>
+                <p class="price">$12.75</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_kansas_city_plate.jpg" alt="Kansas City Plate">
+                <h3>Kansas City Plate</h3>
+                <p class="description">Choice of (pick 1) Shredded Pork, Beef Brisket, Chicken Breast, or Turkey Breast loose on the plate. Served with choice of (pick 1) Pit Potatoes, Coleslaw, Baked Beans, Cornbread.</p>
+                <p class="price">$12.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_bbq_platter.jpg" alt="Smokin’ BBQ Platter">
+                <h3>Smokin’ BBQ Platter</h3>
+                <p class="description">Choice of (pick 1) Shredded Pork, Beef Brisket, Chicken Breast, or Turkey Breast loose on the plate. Served with choice of (pick 2) Pit Potatoes, Coleslaw, Baked Beans, Cornbread.</p>
+                <p class="price">$14.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_combination_platter.jpg" alt="Combination Platter">
+                <h3>Combination Platter</h3>
+                <p class="description">Choice of (pick 2) Shredded Pork, Beef Brisket, Chicken Breast, Turkey Breast, Hickory Smoked Ribs loose on the plate. Served with choice of (pick 2) Pit Potatoes, Coleslaw, Baked Beans, Cornbread.</p>
+                <p class="price">$18.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_smorgasbord.jpg" alt="Smoky Smorgasbord">
+                <h3>Smoky Smorgasbord</h3>
+                <p class="description">Shredded Pork, Beef Brisket, Chicken Breast, Turkey Breast and 2 Bones Hickory Smoked Ribs. Served with choice of (pick 3) Pit Potatoes, Coleslaw, Baked Beans, Cornbread.</p>
+                <p class="price">$31.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-category font-extrabold">
+        <h2>Salads</h2>
+        <div class="menu-items-grid">
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_pork_salad_annie.jpg" alt="Pork Salad Annie">
+                <h3>Pork Salad Annie</h3>
+                <p class="description">Chopped Crisp Romaine, Colby-Jack cheese, Bushel Boy tomatoes, cucumber, carrot and house fried croutons topped with Shredded Pork.<br>House made dressing: Ranch, Honey French, Bleu, Balsamic, Honey Mustard, 1000 Island</p>
+                <p class="price">$14.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_rizzi_rib_salad.jpg" alt="Rizzi’s Rib Salad">
+                <h3>Rizzi’s Rib Salad</h3>
+                <p class="description">A verdict has been reached; it’s legal to have 3 Bones of Hickory Smoked Ribs on a salad. Break the law, add another bone…$3.00.<br>House made dressing: Ranch, Honey French, Bleu, Balsamic, Honey Mustard, 1000 Island</p>
+                <p class="price">$15.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_blues_wing_salad.jpg" alt="Blues Wing Salad">
+                <h3>Blues Wing Salad</h3>
+                <p class="description">Chopped Crisp romaine, Colby-Jack cheese, Bushel Boy tomatoes, cucumber, carrots and house fried croutons topped with Piggy Blues Brew marinated boneless wings tossed in your favorite sauce.<br>House made dressing: Ranch, Honey French, Bleu, Balsamic, Honey Mustard, 1000 Island</p>
+                <p class="price">$14.25</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="font-extrabold">
+        <h3>It's all about that Meat...</h3>
+        <dl>
+            <dt>Shredded Pork</dt>
+            <dd>We cook Hormel Butts...and we cannot lie. Low & slow we don't deny...</dd>
+
+            <dt>Beef Brisket</dt>
+            <dd>13 hours mandatory in the hickory pit for this well rubbed cut.</dd>
+
+            <dt>Chicken Breast</dt>
+            <dd>Boneless, Brined, and left for shred...a smoke thriller.</dd>
+
+            <dt>Turkey Breast</dt>
+            <dd>We rub it, smoke it, chop it so you can just love it.</dd>
+
+            <dt>Smoked Pork Ribs</dt>
+            <dd>Meaty Hormel Spares rubbed and gently smoked over a hickory fire.</dd>
+        </dl>
+    </section>
+
+    <section class="menu-category font-extrabold">
+        <h2>Sandwiches</h2>
+        <div class="menu-items-grid">
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_oink_burger.jpg" alt="Oink Burger">
+                <h3>Oink Burger</h3>
+                <p class="description">Fresh ground chuck seared on our flat top, dressed with Hormel Bacon, American cheese, diced onion, tomato, and pickle. Served with choice of (pick 1) Pit Potatoes, Beer Battered Fries, Baked Beans, Coleslaw.</p>
+                <p class="price">$13.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_queen_of_memphis.jpg" alt="Queen of Memphis">
+                <h3>Queen of Memphis</h3>
+                <p class="description">Tangy BBQ Pork, Pepper Jack cheese, coleslaw, jalapenos, lettuce, diced onion, pickle, and tomato on seared fresh ground chuck. Served with choice of (pick 1) Pit Potatoes, Beer Battered Fries, Baked Beans, Coleslaw.</p>
+                <p class="price">$15.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_jackass_burger.jpg" alt="Jackass Burger">
+                <h3>Jackass Burger</h3>
+                <p class="description">Batter fried jalapeno & onion tangles, pepper Jack cheese, and our 1st Place Awarded Jackass sauce on seared fresh ground chuck. Served with choice of (pick 1) Pit Potatoes, Beer Battered Fries, Baked Beans, Coleslaw.</p>
+                <p class="price">$13.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_blues_wing_basket.jpg" alt="Blues Wing Basket">
+                <h3>Blues Wing Basket</h3>
+                <p class="description">Piggy Blues Brew marinated boneless wings tossed in your favorite sauce. Served with choice of (pick 2) Pit Potatoes, Beer Battered Fries, Baked Beans, Coleslaw.</p>
+                <p class="price">$13.25</p>
+            </div>
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_blues_wing_po_boy.jpg" alt="Blues Wing Po' Boy">
+                <h3>Blues Wing Po' Boy</h3>
+                <p class="description">Piggy Blues Brew marinated boneless wings tossed in your favorite sauce, topped with coleslaw, fries, lettuce, onion, pickle, tomato, and ranch dressing on French bread.</p>
+                <p class="price">$15.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_pig_pen_po_boy.jpg" alt="Pig Pen Po' Boy">
+                <h3>Pig Pen Po' Boy</h3>
+                <p class="description">'Nawlins style hoagie of Shredded Pork topped with coleslaw, fries, lettuce, onion, pickle, tomato, and 1000 Island on French bread.</p>
+                <p class="price">$15.25</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-category font-extrabold">
+        <h2>Potatoes</h2>
+        <div class="menu-items-grid">
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_smothered_potatoes.jpg" alt="Smothered Potatoes">
+                <h3>Smothered Potatoes</h3>
+                <p class="description">A bed of Pit Potatoes topped with Shredded Pork, Colby-Jack Cheese, diced onion, and dill pickles SMOTHERED in warmed Mild BBQ Sauce.</p>
+                <p class="price">$12.75</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_pork_stuffed_tater.jpg" alt="Pork Stuffed Tater">
+                <h3>Pork Stuffed Tater</h3>
+                <p class="description">Big baked potato, buttered and stuffed with Shredded Pork, topped with nacho cheese, diced onion, house made jalapenos, and sour cream.</p>
+                <p class="price">$12.75</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-category font-extrabold">
+        <h2>Ribs</h2>
+        <div class="menu-items-grid">
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_ribs_for_one.jpg" alt="Ribs for One">
+                <h3>Ribs for One</h3>
+                <p class="description">4 Bones of Hickory Smoked Ribs served with choice of (pick 2) Pit Potatoes, Coleslaw, Baked Beans, Cornbread.</p>
+                <p class="price">$17.25</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_half_slab_dinner.jpg" alt="Half Slab Dinner">
+                <h3>Half Slab Dinner</h3>
+                <p class="description">6 Bones of Hickory Smoked Ribs served with choice of (pick 2) Pit Potatoes, Coleslaw, Baked Beans, Cornbread.</p>
+                <p class="price">$19.50</p>
+            </div>
+
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_whole_slab_dinner.jpg" alt="Whole Slab Dinner">
+                <h3>Whole Slab Dinner</h3>
+                <p class="description">12 Bones of Hickory Smoked Ribs served with choice of (pick 3) Pit Potatoes, Coleslaw, Baked Beans, Cornbread.</p>
+                <p class="price">$31.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-category font-extrabold">
+        <h2>Extras</h2>
+        <div class="menu-items-grid">
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_baked_beans.jpg" alt="Baked Beans">
+                <h3>Baked Beans</h3>
+                <p class="description">Brown sugar caramelized and loaded with onion & smoked meat.</p>
+                <p class="price">$2.00</p>
+            </div>
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_pit_potatoes.jpg" alt="Pit Potatoes">
+                <h3>Pit Potatoes</h3>
+                <p class="description">Thin sliced white diamond spuds deep fried and salted.</p>
+                <p class="price">$4.00</p>
+            </div>
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_beer_battered_fries.jpg" alt="Beer Battered Fries">
+                <h3>Beer Battered Fries</h3>
+                <p class="description">Lightly battered French Fries.</p>
+                <p class="price">$4.00</p>
+            </div>
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_cornbread.jpg" alt="Cornbread">
+                <h3>Cornbread</h3>
+                <p class="description">Fluffy cornbread with a side of sweet cream honey butter.</p>
+                <p class="price">$2.00</p>
+            </div>
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_fried_okra.jpg" alt="Fried Okra">
+                <h3>Fried Okra</h3>
+                <p class="description">Buttermilk soaked, corn flour dusted, and Cajun spiced.</p>
+                <p class="price">$4.00</p>
+            </div>
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_baked_potato.jpg" alt="Baked Potato">
+                <h3>Baked Potato</h3>
+                <p class="description">Larger than life spud served with fresh whipped butter, Colby-Jack cheese, and sour cream.</p>
+                <p class="price">$4.00</p>
+            </div>
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_corn_puffs.jpg" alt="Corn Puffs">
+                <h3>Corn Puffs</h3>
+                <p class="description">Batter fried nuggets filled with golden creamy corn.</p>
+                <p class="price">$4.00</p>
+            </div>
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_side_salad.jpg" alt="Side Salad">
+                <h3>Side Salad</h3>
+                <p class="description">Crisp romaine, Colby-Jack Cheese, Bushel Boy tomatoes, cucumber, carrots and deep fried croutons.</p>
+                <p class="price">$5.00</p>
+            </div>
+            <div class="menu-item-card font-extrabold">
+                <img src="images/placeholder_creamy_slaw.jpg" alt="Creamy Slaw">
+                <h3>Creamy Slaw</h3>
+                <p class="description">Shredded sweet cabbage tossed in our own slaw dressing.</p>
+                <p class="price">$2.00</p>
+            </div>
+        </div>
+    </section>
+   </main>
+    <footer class="font-extrabold">
+        <p>Piggy Blues BBQ, Inc. 2024</p>
+</footer>
+  <script src="scripts/home.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
